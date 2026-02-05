@@ -1,0 +1,153 @@
+{
+  "companyId": "COMPANY-001",
+  "reportingPeriod": {
+    "start": "",
+    "end": ""
+  },
+  "boardMembers": [
+    {
+      "name": "wewe",
+      "position": "wewe",
+      "appointmentDate": "2025-10-10",
+      "qualifications": "weee",
+      "experience": "ew",
+      "isPEP": true,
+      "id": "mm254q6jb"
+    }
+  ],
+  "committees": [
+    {
+      "name": "weeeeeeew",
+      "purpose": "weeeeeeeee",
+      "chairperson": "wewe",
+      "members": ["wewe"],
+      "meetingsHeld": 3,
+      "meetingFrequency": "Monthly",
+      "id": "zm6tbscav"
+    }
+  ],
+  "products": [
+    {
+      "productName": "sdsd",
+      "productType": "Asset Management",
+      "launchDate": "2025-10-03",
+      "income": 0.06,
+      "id": "q7dd4t76w",
+      "concentrationPercentage": 100
+    }
+  ],
+  "clients": [
+    {
+      "clientName": "sdsd",
+      "clientType": "Individual",
+      "onboardingDate": "2025-10-14",
+      "income": 0.08,
+      "id": "o7vlfjweu",
+      "concentrationPercentage": 100
+    }
+  ],
+  "financialStatement": {
+    "periodStart": "2025-10-17",
+    "periodEnd": "2025-10-14",
+    "totalRevenue": 0.07,
+    "operatingCosts": 0.07,
+    "profitBeforeTax": 0.06,
+    "grossMargin": 0,
+    "profitMargin": 85.71,
+    "incomeItems": [
+      {
+        "category": "Advisory Fees",
+        "description": "dssss",
+        "amount": 0.04,
+        "isCore": true,
+        "id": "8027wjwsl"
+      }
+    ]
+  },
+  "balanceSheet": {
+    "periodEnd": "2025-10-18",
+    "shareholdersFunds": 0.07,
+    "totalAssets": 0.06,
+    "totalLiabilities": 0.06,
+    "currentAssets": 0.07,
+    "currentLiabilities": 0.07,
+    "workingCapital": 0,
+    "cashCover": 0.06,
+    "assets": [
+      {
+        "assetType": "Leased Asset",
+        "category": "ds",
+        "value": 0.08,
+        "isCurrent": false,
+        "acquisitionDate": "2025-10-17",
+        "id": "33acz1jj3"
+      }
+    ],
+    "liabilities": [
+      {
+        "liabilityType": "Lease",
+        "category": "sddd",
+        "value": 0.07,
+        "isCurrent": true,
+        "dueDate": "2025-10-14",
+        "id": "z23x0xx56"
+      }
+    ],
+    "debtors": [
+      {
+        "name": "dsd",
+        "amount": 0.06,
+        "ageDays": 6,
+        "id": "vkj4b1iq0"
+      }
+    ],
+    "creditors": [
+      {
+        "name": "dsss",
+        "amount": 0.06,
+        "dueDate": "2025-10-01",
+        "id": "t2nwzksxt"
+      }
+    ],
+    "relatedParties": [
+      {
+        "name": "dsdsd",
+        "relationship": "Director",
+        "balance": 0.06,
+        "type": "receivable",
+        "id": "2iaa65msi"
+      }
+    ]
+  },
+  "clientAssets": [
+    {
+      "assetType": "Cash & Equivalents",
+      "category": "dsd",
+      "value": 0.08,
+      "isCurrent": true,
+      "acquisitionDate": "2025-10-17",
+      "id": "dn0kzri8c",
+      "concentrationPercentage": 100
+    }
+  ],
+  "capitalPosition": {
+    "calculationDate": "2025-10-17",
+    "netCapital": 0.06,
+    "requiredCapital": 0.07,
+    "adjustedLiquidCapital": 0.03,
+    "isCompliant": false,
+    "capitalAdequacyRatio": 85.71
+  },
+  "metadata": {
+    "submittedAt": "2025-10-31T06:55:07.525Z",
+    "totalBoardMembers": 1,
+    "totalCommittees": 1,
+    "totalProducts": 1,
+    "totalClients": 1,
+    "totalIncomeItems": 1,
+    "totalAssets": 1,
+    "totalLiabilities": 1,
+    "totalClientAssetTypes": 1,
+    "totalDocuments": 3
+  }
+}
