@@ -102,7 +102,7 @@ function LoginForm() {
               alt="Seczim Logo"
               width={240}
               height={80}
-              className="h-16 w-auto"
+              className="h-55 w-auto"
               priority
             />
           </div>
@@ -198,11 +198,10 @@ function LoginForm() {
               {slidingTexts.map((text, index) => (
                 <p
                   key={index}
-                  className={`text-xl text-white absolute inset-0 transition-all duration-700 ${
-                    index === currentTextIndex
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-4"
-                  }`}
+                  className={`text-xl text-white absolute inset-0 transition-all duration-700 ${index === currentTextIndex
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-4"
+                    }`}
                 >
                   {text}
                 </p>
