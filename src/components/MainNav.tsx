@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import NextImage from "next/image";
 import { usePathname } from "next/navigation";
 import {
   Home,
@@ -56,7 +57,10 @@ const items = [
 export default function MainNav() {
   const pathname = usePathname();
   const router = useRouter();
-  const [user, setUser] = React.useState<{ username?: string; role?: string } | null>(null);
+  const [user, setUser] = React.useState<{
+    username?: string;
+    role?: string;
+  } | null>(null);
 
   React.useEffect(() => {
     // Basic check for auth token on mount
@@ -81,10 +85,14 @@ export default function MainNav() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary-500 rounded-md flex items-center justify-center text-white">
-                P
-              </div>
-              <span className="text-lg font-semibold">Prudential</span>
+              <NextImage
+                src="/seczim.svg"
+                alt="Seczim Logo"
+                width={40}
+                height={40}
+                className="h-10 w-auto"
+              />
+             
             </Link>
             <nav
               aria-label="Main Navigation"
@@ -134,7 +142,7 @@ export default function MainNav() {
                       "inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition",
                       active
                         ? activeClasses
-                        : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800"
+                        : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800",
                     )}
                   >
                     <Icon className="w-4 h-4" />
@@ -148,24 +156,34 @@ export default function MainNav() {
             {user ? (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" className="relative h-8 w-8 rounded-full">
+                  <Button
+                    variant="ghost"
+                    className="relative h-8 w-8 rounded-full"
+                  >
                     <Avatar className="h-8 w-8">
                       <AvatarImage src="/avatars/01.png" alt={user.username} />
-                      <AvatarFallback>{user.username?.substring(0, 2).toUpperCase()}</AvatarFallback>
+                      <AvatarFallback>
+                        {user.username?.substring(0, 2).toUpperCase()}
+                      </AvatarFallback>
                     </Avatar>
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56" align="end" forceMount>
                   <DropdownMenuLabel className="font-normal">
                     <div className="flex flex-col space-y-1">
-                      <p className="text-sm font-medium leading-none">{user.username}</p>
+                      <p className="text-sm font-medium leading-none">
+                        {user.username}
+                      </p>
                       <p className="text-xs leading-none text-muted-foreground">
                         {user.role}
                       </p>
                     </div>
                   </DropdownMenuLabel>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem onClick={handleLogout} className="text-red-600">
+                  <DropdownMenuItem
+                    onClick={handleLogout}
+                    className="text-red-600"
+                  >
                     Log out
                   </DropdownMenuItem>
                 </DropdownMenuContent>
